@@ -6,7 +6,7 @@ Based on the 3x3 Lights Out puzzle where selecting a square will invert the stat
 
 We modified the puzzle into a 5x5 2-player game where each player tries to get a full row and column of tiles in their colours.
 
-![50.002 poster](https://github.com/latashalenus/DoubleCross/blob/master/double-cross.pdf)
+![50.002 poster](https://github.com/latashalenus/DoubleCross/blob/master/double-cross.jpg)
 
 # Gameplay
 
