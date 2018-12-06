@@ -1,0 +1,8 @@
+INTSTYLE=pa
+INFILE=C:\Xilinx_ISE\Mojo Projects\2mode\work\planAhead\2mode\2mode.runs\impl_1\mojo_top_0_routed.ncd
+OUTFILE=C:\Xilinx_ISE\Mojo Projects\2mode\work\planAhead\2mode\2mode.runs\impl_1\mojo_top_0.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=C:\Xilinx_ISE\Mojo Projects\2mode\work\planAhead\2mode\2mode.runs\impl_1
+LICENSE=WebPack
+USER_INFO=211619240_0_0_735

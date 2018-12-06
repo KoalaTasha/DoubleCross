@@ -1,0 +1,31 @@
+module square_wincon (
+    input clk,  // clock
+    input rst,  // reset
+    input grid[25],
+    output winner[2]  
+  ) {
+  .clk(clk) {
+    dff square[9][9]; 
+  }
+  always {
+    winner = 0;
+    
+    // all possible winning positions - for 3x3 solid square
+    square.d[0][8:0] = c{grid[2],grid[1],grid[0],grid[12],grid[11],grid[10],grid[5],grid[6],grid[7]};
+    square.d[1][8:0] = c{grid[3],grid[2],grid[1],grid[13],grid[12],grid[11],grid[6],grid[7],grid[8]};
+    square.d[2][8:0] = c{grid[4],grid[3],grid[2],grid[14],grid[13],grid[12],grid[7],grid[8],grid[9]};
+    square.d[3][8:0] = c{grid[7],grid[6],grid[5],grid[17],grid[16],grid[15],grid[10],grid[11],grid[12]};
+    square.d[4][8:0] = c{grid[8],grid[7],grid[6],grid[18],grid[17],grid[16],grid[11],grid[12],grid[13]};
+    square.d[5][8:0] = c{grid[9],grid[8],grid[7],grid[19],grid[18],grid[17],grid[12],grid[13],grid[14]};
+    square.d[6][8:0] = c{grid[12],grid[11],grid[10],grid[22],grid[21],grid[20],grid[15],grid[16],grid[17]};
+    square.d[7][8:0] = c{grid[13],grid[12],grid[11],grid[23],grid[22],grid[21],grid[16],grid[17],grid[18]};
+    square.d[8][8:0] = c{grid[14],grid[13],grid[12],grid[24],grid[23],grid[22],grid[17],grid[18], grid[19]};
+    
+    winner[1] =  (square.q[0] == 9b111111111 | square.q[1] == 9b111111111 | square.q[2] == 9b111111111 | square.q[3] == 9b111111111 | square.q[4] == 9b111111111 | square.q[5] == 9b111111111 | square.q[6] == 9b111111111 | square.q[7] == 9b111111111 | square.q[8] == 9b111111111);  // true if red square formed
+    winner[0] =  (square.q[0] == 9b0 | square.q[1] == 9b0 | square.q[2] == 9b0 | square.q[3] == 9b0 | square.q[4] == 9b0 | square.q[5] == 9b0 | square.q[6] == 9b0 | square.q[7] == 9b0 | square.q[8] == 9b0);  // true if green square
+    
+    // if winner = 00 : no one formed a cross
+    // if winner = 01 : zero/ green formed a cross 
+    // if winner = 10 : one/red formed a cross
+    }
+}

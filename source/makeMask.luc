@@ -1,0 +1,36 @@
+module makeMask (
+    input clk,  // clock
+    input rst,  // reset
+    input pushed[25],
+    output mask[25]
+  ) {
+
+  always {
+    if (pushed[0] > 0 ){mask = 25b0000000000000000000100011;}
+    else if (pushed[1] > 0){ mask = 25b0000000000000000001000111;}
+    else if (pushed[2] > 0){ mask = 25b0000000000000000010001110;}
+    else if (pushed[3] > 0){ mask = 25b0000000000000000100011100;}
+    else if (pushed[4] > 0){ mask = 25b0000000000000001000011000;}
+    else if (pushed[5] > 0){ mask = 25b0000000000000010001100001;}
+    else if (pushed[6] > 0){ mask = 25b0000000000000100011100010;}
+    else if (pushed[7] > 0){ mask = 25b0000000000001000111000100;}
+    else if (pushed[8] > 0){ mask = 25b0000000000010001110001000;}
+    else if (pushed[9] > 0){ mask = 25b0000000000100001100010000;}
+    else if (pushed[10] > 0){ mask = 25b0000000001000110000100000;}
+    else if (pushed[11] > 0){ mask = 25b0000000010001110001000000;}
+    else if (pushed[12] > 0){ mask = 25b0000000100011100010000000;}
+    else if (pushed[13] > 0){ mask = 25b0000001000111000100000000;}
+    else if (pushed[14] > 0){ mask = 25b0000010000110001000000000;}
+    else if (pushed[15] > 0){ mask = 25b0000100011000010000000000;}
+    else if (pushed[16] > 0){ mask = 25b0001000111000100000000000;}
+    else if (pushed[17] > 0){ mask = 25b0010001110001000000000000;}
+    else if (pushed[18] > 0){ mask = 25b0100011100010000000000000;}
+    else if (pushed[19] > 0){ mask = 25b1000011000100000000000000;}
+    else if (pushed[20] > 0){ mask = 25b0001100001000000000000000;}
+    else if (pushed[21] > 0){ mask = 25b0011100010000000000000000;}
+    else if (pushed[22] > 0){ mask = 25b0111000100000000000000000;}
+    else if (pushed[23] > 0){ mask = 25b1110001000000000000000000;}
+    else if (pushed[24] > 0){ mask = 25b1100010000000000000000000;}
+    else {mask = 25b0;}    
+  }
+}

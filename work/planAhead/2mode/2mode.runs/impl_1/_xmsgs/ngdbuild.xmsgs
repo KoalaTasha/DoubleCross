@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_button[0]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(176)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_button[0]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_button[4]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(187)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_button[4]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[23]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(190)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[23]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[22]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(192)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[22]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[21]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(194)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[21]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[20]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(196)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[20]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[19]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(198)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[19]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[18]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(200)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[18]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[17]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(202)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[17]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[16]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(204)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[16]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[15]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(207)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[15]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[14]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(209)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[14]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[13]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(211)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[13]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[7]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(229)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[7]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[6]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(231)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[6]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[5]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(233)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[5]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[4]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(235)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[4]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[2]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(240)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[2]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+</messages>
+

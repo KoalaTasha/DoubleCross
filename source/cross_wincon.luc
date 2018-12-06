@@ -1,0 +1,46 @@
+module cross_wincon (
+    input clk,  // clock
+    input rst,  // reset
+    input grid[25],
+    output winner[2]  
+    ) {
+    .clk(clk) {
+    dff row[5][5];
+    dff col[5][5]; 
+    dff one[2];
+    dff zero[2];
+  }
+  
+  always {
+    winner = 0;
+    
+    // leds in each row
+    row.d[0][4:0] = grid[4:0];
+    row.d[1][4:0] = grid[9:5];
+    row.d[2][4:0] = grid[14:10];
+    row.d[3][4:0] = grid[19:15];
+    row.d[4][4:0] = grid[24:20];
+    
+    // leds in each col
+    col.d[0][4:0] = c{grid[4],grid[9],grid[14],grid[19],grid[24]};
+    col.d[1][4:0] = c{grid[3],grid[8],grid[13],grid[18],grid[23]};
+    col.d[2][4:0] = c{grid[2],grid[7],grid[12],grid[17],grid[22]};
+    col.d[3][4:0] = c{grid[1],grid[6],grid[11],grid[16],grid[21]};
+    col.d[4][4:0] = c{grid[0],grid[5],grid[10],grid[15],grid[20]};
+    
+    
+    // check if rows/columns formed
+    one.d[0] =  (row.q[0] == 5b11111 | row.q[1] == 5b11111 | row.q[2] == 5b11111 | row.q[3] == 5b11111 | row.q[4] == 5b11111 );  // true if red row formed
+    one.d[1] =  (col.q[0] == 5b11111 | col.q[1] == 5b11111 | col.q[2] == 5b11111 | col.q[3] == 5b11111 | col.q[4] == 5b11111 ); // true if red column formed
+
+    zero.d[0] =  (row.q[0] == 5b0 | row.q[1] == 5b0 | row.q[2] == 5b0 | row.q[3] == 5b0 | row.q[4] == 5b0 );  // true if green row formed
+    zero.d[1] = (col.q[0] == 5b0 | col.q[1] == 5b0 | col.q[2] == 5b0 | col.q[3] == 5b0 | col.q[4] == 5b0 );   // true if green column formed
+  
+    winner[1] = (one.q[0] & one.q[1]);
+    winner[0] = (zero.q[0] & zero.q[1]);  
+    
+    // if winner = 00 : no one formed a cross
+    // if winner = 01 : zero/ green formed a cross 
+    // if winner = 10 : one/red formed a cross
+  }
+}
